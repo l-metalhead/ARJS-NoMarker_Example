@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<a-scene embedded arjs>
+<a-scene embedded arjs my-event>
     
     <a-assets>
         <a-asset-item id="object" src="models/fish.obj"></a-asset-item>
@@ -18,7 +18,7 @@
 
 
 
-    <a-obj-model src="#object" mtl="#material" position="-.5 2 -4" rotation="0 -90 0" scale=".026" material="src: models/fish.jpg"></a-obj-model>
+    <a-obj-model id="fish"></a-obj-model>
 
     <a-camera></a-camera>
 </a-scene>
